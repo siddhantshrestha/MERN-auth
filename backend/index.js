@@ -19,12 +19,6 @@ const port = process.env.PORT || 3000
 
 app.use("/api/users", userRoutes)
 
-// app.get("/", (req, res) => {
-//   res.status(200).json({
-//     message: "This is a new connection",
-//   })
-// })
-
 //middleware
 app.use(notFound)
 app.use(errorHandler)
